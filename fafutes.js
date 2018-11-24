@@ -37,6 +37,9 @@ function init(){
       case 'luc':
         suruseg = 0.43;
         break;
+        case 'wood o2':
+        suruseg = 0.955;//955*79=75445 Ft 1 m3, ami vágott fáknál 1 erdei m3-nek felel meg
+        break;
     }
   
     var energia = ((100 - nedvtart) * futoertek - nedvtart * 0.63) / 100;
