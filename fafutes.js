@@ -49,7 +49,7 @@ function init(){
     var faSzarazTomege = (1000 * nettoTerfogat - vizTomege) * suruseg;
     var ossztomeg = vizTomege + faSzarazTomege;
     var teljesFutoErtek = faSzarazTomege * futoertek - vizTomege * 0.63;
-    document.getElementsByClassName('suruseg')[0].innerHTML = 'Választott fa sűrűsége: ' + suruseg;
+    document.getElementsByClassName('suruseg')[0].innerHTML = 'Választott fa sűrűsége: ' + suruseg + ' g/cm<sup>3</sup>';
     document.getElementsByClassName('futoertek')[0].innerHTML = 'Nedves fa fűtőértéke: ' + energia.toFixed(3) + ' kWh/kg';
     document.getElementsByClassName('nedvtart')[0].innerHTML = 'Hasznos energia (kazán hatásfokkal): ' + hasznosEnergia.toFixed(3) + ' kWh/kg';
     document.getElementsByClassName('ossztomeg')[0].innerHTML = 'Össztömeg: ' + ossztomeg + ' kg';
