@@ -37,7 +37,7 @@ function init(){
       case 'luc':
         suruseg = 0.43;
         break;
-        case 'wood o2':
+      case 'wood o2':
         suruseg = 0.955;//955*79=75445 Ft 1 m3, ami vágott fáknál 1 erdei m3-nek felel meg
         break;
     }
@@ -46,7 +46,7 @@ function init(){
     var hasznosEnergia = energia * kazanHatasfok / 100;
     var nettoTerfogat = terfogat / 1.7;
     var vizTomege = 1000 * nettoTerfogat * nedvtart / 100;
-    var faSzarazTomege = (1000 * nettoTerfogat - vizTomege) * suruseg;
+    var faSzarazTomege = 1000 * nettoTerfogat * suruseg;
     var ossztomeg = vizTomege + faSzarazTomege;
     var teljesFutoErtek = faSzarazTomege * futoertek - vizTomege * 0.63;
     document.getElementsByClassName('suruseg')[0].innerHTML = 'Választott fa sűrűsége: ' + suruseg + ' g/cm<sup>3</sup>';
