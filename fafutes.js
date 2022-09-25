@@ -43,10 +43,10 @@ function init(){
     }
   
     var energia = ((100 - nedvtart) * futoertek - nedvtart * 0.63) / 100;
-    var hasznosEnergia = energia * kazanHatasfok / 100;
+    //var hasznosEnergia = energia * kazanHatasfok / 100;
     var nettoTerfogat = terfogat / 1.7;
-    var vizTomege = 1000 * nettoTerfogat * nedvtart / 100;
     var faSzarazTomege = 1000 * nettoTerfogat * suruseg;
+    var vizTomege = faSzarazTomege * nedvtart / 100;
     var ossztomeg = vizTomege + faSzarazTomege;
     var teljesFutoErtek = faSzarazTomege * futoertek - vizTomege * 0.63;
     document.getElementsByClassName('suruseg')[0].innerHTML = 'Választott fa sűrűsége: ' + suruseg + ' g/cm<sup>3</sup>';
