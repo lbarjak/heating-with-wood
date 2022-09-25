@@ -1,2 +1,3 @@
+# Fűtés fával
 # heating-with-wood
-https://heating-with-wood.netlify.com
+https://futes-faval.netlify.com
