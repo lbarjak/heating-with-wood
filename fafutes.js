@@ -39,7 +39,6 @@ function init(){
         break;
     }
   
-    var energia = ((100 - nedvtart) * futoertek - nedvtart * 0.63) / 100;
     var nettoTerfogat = terfogat / 1.7;
     var faSzarazTomege = 1000 * nettoTerfogat * suruseg;
     var vizTomege = nedvtart * faSzarazTomege / (100 - nedvtart);
