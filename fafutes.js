@@ -52,7 +52,7 @@ function init(){
     document.getElementsByClassName('suruseg')[0].innerHTML = 'Választott fa sűrűsége: ' + suruseg + ' g/cm<sup>3</sup>';
     //document.getElementsByClassName('futoertek')[0].innerHTML = 'Nedves fa fűtőértéke: ' + energia.toFixed(3) + ' kWh/kg';
     //document.getElementsByClassName('nedvtart')[0].innerHTML = 'Hasznos energia (kazán hatásfokkal): ' + hasznosEnergia.toFixed(3) + ' kWh/kg';
-    document.getElementsByClassName('ossztomeg')[0].innerHTML = 'Össztömeg: ' + ossztomeg + ' kg';
+    document.getElementsByClassName('ossztomeg')[0].innerHTML = 'Össztömeg: ' + ossztomeg.toFixed() + ' kg';
     document.getElementsByClassName('szarazfa')[0].innerHTML = 'Száraz fa tömege: ' + faSzarazTomege + ' kg';
     document.getElementsByClassName('szarazfa2')[0].innerHTML = 'Száraz fa fűtőértéke: ' + (faSzarazTomege * futoertek).toFixed() + ' kWh';
     document.getElementsByClassName('viz')[0].innerHTML = 'Víz tömege: ' + vizTomege.toFixed() + ' kg';
