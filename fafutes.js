@@ -55,7 +55,7 @@ function init(){
     document.getElementsByClassName('ossztomeg')[0].innerHTML = 'Össztömeg: ' + ossztomeg + ' kg';
     document.getElementsByClassName('szarazfa')[0].innerHTML = 'Száraz fa tömege: ' + faSzarazTomege + ' kg';
     document.getElementsByClassName('szarazfa2')[0].innerHTML = 'Száraz fa fűtőértéke: ' + (faSzarazTomege * futoertek).toFixed() + ' kWh';
-    document.getElementsByClassName('viz')[0].innerHTML = 'Víz tömege: ' + vizTomege + ' kg';
+    document.getElementsByClassName('viz')[0].innerHTML = 'Víz tömege: ' + vizTomege.toFixed() + ' kg';
     document.getElementsByClassName('viz2')[0].innerHTML = 'Veszteség a víztartalom miatt: ' + (vizTomege * 0.63).toFixed() + ' kWh';
     document.getElementsByClassName('teljes')[0].innerHTML = 'Teljes fűtőérték: ' + (teljesFutoErtek).toFixed() + ' kWh';
     document.getElementsByClassName('hasznos')[0].innerHTML = 'Hasznosuló fűtőérték (kazánhatásfokkal): ' + (teljesFutoErtek * kazanHatasfok / 100).toFixed() + ' kWh';
