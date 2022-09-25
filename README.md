@@ -1,3 +1,3 @@
-# Fűtés fával
-# heating-with-wood
-https://futes-faval.netlify.com
+# Fűtés fával, térfogatra
+# heating-with-wood-volume
+https://futes-faval-terfogat.netlify.com
