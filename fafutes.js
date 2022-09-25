@@ -37,21 +37,15 @@ function init(){
       case 'luc':
         suruseg = 0.43;
         break;
-      case 'wood o2':
-        suruseg = 0.955;//955*79=75445 Ft 1 m3, ami vágott fáknál 1 erdei m3-nek felel meg
-        break;
     }
   
     var energia = ((100 - nedvtart) * futoertek - nedvtart * 0.63) / 100;
-    //var hasznosEnergia = energia * kazanHatasfok / 100;
     var nettoTerfogat = terfogat / 1.7;
     var faSzarazTomege = 1000 * nettoTerfogat * suruseg;
     var vizTomege = nedvtart * faSzarazTomege / (100 - nedvtart);
     var ossztomeg = vizTomege + faSzarazTomege;
     var teljesFutoErtek = faSzarazTomege * futoertek - vizTomege * 0.63;
     document.getElementsByClassName('suruseg')[0].innerHTML = 'Választott fa sűrűsége: ' + suruseg + ' g/cm<sup>3</sup>';
-    //document.getElementsByClassName('futoertek')[0].innerHTML = 'Nedves fa fűtőértéke: ' + energia.toFixed(3) + ' kWh/kg';
-    //document.getElementsByClassName('nedvtart')[0].innerHTML = 'Hasznos energia (kazán hatásfokkal): ' + hasznosEnergia.toFixed(3) + ' kWh/kg';
     document.getElementsByClassName('ossztomeg')[0].innerHTML = 'Össztömeg: ' + ossztomeg.toFixed() + ' kg';
     document.getElementsByClassName('szarazfa')[0].innerHTML = 'Száraz fa tömege: ' + faSzarazTomege + ' kg';
     document.getElementsByClassName('szarazfa2')[0].innerHTML = 'Száraz fa fűtőértéke: ' + (faSzarazTomege * futoertek).toFixed() + ' kWh';
